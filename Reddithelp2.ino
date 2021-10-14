@@ -61,7 +61,7 @@ void loop() {
   row.addTag("Device", "ESP8266");
   row.addTag("Sensor", "Temp");
   row.addTag("Unit", "F");
-  row.addField("Temp", "sensors.getTempFByIndex");
+  row.addField("Temp", temperatureF);
 
   influx.write(row);
   delay(5000);
